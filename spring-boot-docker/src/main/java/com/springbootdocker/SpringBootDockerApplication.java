@@ -8,7 +8,7 @@ public class SpringBootDockerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootDockerApplication.class, args);
-		System.out.println("Started SBA");
+		System.out.println("Started SBA ");
 	}
 
 }
