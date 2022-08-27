@@ -22,4 +22,11 @@ public String getHello(@PathVariable(name = "nm",required = false) Optional<Stri
 	return "Hello "+name.orElse(" World !")+" !";
 }
 
+@GetMapping(path = {"docker","/docker/{nm}"})
+public String getDocker(@PathVariable(name = "nm",required = false) Optional<String> name )
+{
+	
+	return "Docker "+name.orElse(" World !")+" !";
+}
+
 }
