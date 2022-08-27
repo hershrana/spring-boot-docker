@@ -12,14 +12,14 @@ public class BasicController {
 public String getHi(@PathVariable(name = "nm",required = false) Optional<String> name )
 {
 	
-	return "Hi "+name.orElse(" World ")+" !";
+	return "Hi "+name.orElse(" World !")+" !";
 }
 
 @GetMapping(path = {"hello","/hello/{nm}"})
 public String getHello(@PathVariable(name = "nm",required = false) Optional<String> name )
 {
 	
-	return "Hello "+name.orElse(" World ")+" !";
+	return "Hello "+name.orElse(" World !")+" !";
 }
 
 }
